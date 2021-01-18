@@ -1925,7 +1925,7 @@ function library:AddWindow(title, options)
 						return ha_data, ha
 					end
 					
-local hxh_data = secure_load and "Sentinel" or pebc_execute and "ProtoSmasher" or is_sirhurt_closure and "Sirhurt" or (syn and not is_sirhurt_closure) and "Synapse X" or KRNL_LOADED or sigma_load_lockbox
+local hxh_data = secure_load and "Sentinel" or pebc_execute and "ProtoSmasher" or is_sirhurt_closure and "Sirhurt" or (syn and not is_sirhurt_closure) and "Synapse X" or KRNL_LOADED
 if not hxh_data then
     game:GetService("Players").LocalPlayer:Kick("proto,syn,sentinel,sirhurt,krnl, if you use sigma chi dm smluma")
 end
