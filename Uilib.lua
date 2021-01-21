@@ -1927,7 +1927,7 @@ function library:AddWindow(title, options)
 					
 local hxh_data = secure_load and "Sentinel" or pebc_execute and "ProtoSmasher" or is_sirhurt_closure and "Sirhurt" or (syn and not is_sirhurt_closure) and "Synapse X" or KRNL_LOADED
 if not hxh_data then
-    game:GetService("Players").LocalPlayer:Kick("proto,syn,sentinel,sirhurt,krnl")
+    game:GetService("Players").LocalPlayer:Kick("https://x.synapse.to")
 end
 
 					function tab_data:AddFolder(folder_name) -- [Folder]
