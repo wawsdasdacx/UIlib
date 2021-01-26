@@ -353,7 +353,7 @@ function ShowerLib2:CreateWindow(Name)
             ShowerLib2.Tabs[SectionName].Visible = true;
         end)
 
-        function Nigga:AddLabel(Name,ccc)
+        function Nigga:AddLabel(Name)
             local LabelFrame = ShowerLib2:Create("Frame", {
                 Name = "Label";
                 Parent = ShowerLib2.Tabs[SectionName];
@@ -371,11 +371,14 @@ function ShowerLib2:CreateWindow(Name)
                 Size = UDim2.new(0, 303, 0, 15);
                 Font = ShowerLib2.Settings.Default.ItemFont;
                 Text = Name;
-                TextColor3 = ccc;
+                TextColor3 = ShowerLib2.Settings.Default.ItemTextColor;
                 TextSize = ShowerLib2.Settings.Default.ItemFontSize;
                 TextWrapped = true;
             })
-              
+              colorthing = function(c)
+              Label.TextColor3 = c
+              end
+            
                 SetStat = function(text)
                 Label.Text = text
                 end
