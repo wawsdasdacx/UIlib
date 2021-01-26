@@ -378,6 +378,9 @@ function ShowerLib2:CreateWindow(Name)
                 SetStat = function(text)
                 Label.Text = text
                 end
+                SetColor = function(c)
+                TextColor3 = c
+                end
         end
         function Nigga:AddButton(Name, Callback)
 
