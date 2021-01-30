@@ -374,11 +374,8 @@ function ShowerLib2:CreateWindow(Name)
                 TextSize = ShowerLib2.Settings.Default.ItemFontSize;
                 TextWrapped = true;
             })
-                SetColor = function(c)
-                Label.TextColor3 = c
-                end
                 SetStat = function(text)
-                Name.Label.Text = text
+                Label.Text = text
                 end
         end
         function Nigga:AddButton(Name, Callback)
